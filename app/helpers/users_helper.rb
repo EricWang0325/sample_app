@@ -1,4 +1,4 @@
-module UsersHelper
+ password: "foobar",module UsersHelper
 
   # Returns the Gravatar for the given user.
   def gravatar_for(user)
