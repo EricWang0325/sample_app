@@ -23,12 +23,13 @@ class UsersController < ApplicationController
       redirect_to @user
     else
       render 'new'
+      flash[:danger] = "You are loser!"
     end
   end
 
   def destroy
     User.find(params[:id]).destroy
-    flash[:success] = "User deleted"
+    flash[:danger] = "User deleted"
     redirect_to users_url
   end
 
